@@ -48,7 +48,7 @@ jobs:
       uses: peter-evans/repository-dispatch@v2
       with:
         token: ${{ secrets.ACCESS_TOKEN }}
-        repository: zhuxiaole/OpenWrt-Packages
+        repository: White12352/OpenWrt-Packages-1
         event-type: update by build firmware
         client-payload: '{"target": "${{ matrix.manufacturer }}"}'
 
