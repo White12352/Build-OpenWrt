@@ -11,6 +11,8 @@ cd $GITHUB_WORKSPACE/openwrt
 rm -rf $localdir
 }
 
+git clone https://github.com/vernesong/OpenClash applications/luci-app-openclash
+
 rm -rf feeds/packages/net/smartdns
 git_sparse_clone main "https://github.com/kenzok8/jell" "feeds/packages/net/smartdns_pkg" smartdns
 
