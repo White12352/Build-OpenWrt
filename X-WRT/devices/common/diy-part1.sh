@@ -17,7 +17,8 @@ rm -rf feeds/packages/net/smartdns
 git_sparse_clone main "https://github.com/kenzok8/jell" "feeds/packages/net/smartdns_pkg" smartdns
 
 rm -rf feeds/packages/net/adguardhome
-git_sparse_clone main "https://github.com/kenzok8/small-package" "feeds/packages/net/adguardhome_pkg" adguardhome
+#git_sparse_clone main "https://github.com/kenzok8/small-package" "feeds/packages/net/adguardhome_pkg" adguardhome
+git_sparse_clone master "https://github.com/281677160/openwrt-package" "feeds/packages/net/adguardhome_pkg" adguardhome
 
 rm -rf feeds/packages/net/frp
 git clone --depth 1 https://github.com/kuoruan/openwrt-frp feeds/packages/net/frp
